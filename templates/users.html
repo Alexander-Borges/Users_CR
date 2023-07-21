@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Here are our users!!!</h1>
+    <div class="table-class">
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Created At</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td>{{ user.first_name }}</td>
+                    <td>{{ user.last_name }}</td>
+                    <th>{{ user.email }}</th>
+                    <th>{{ user.created_at }}</th>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div class="add_user">
+            <a href="/user/new" class="primary">Add a User</a>
+        </div>
+    </div>
+
+</body>
+</html>

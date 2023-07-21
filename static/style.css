@@ -1,0 +1,54 @@
+* { 
+    background-color: azure;
+}
+.table-class, h1  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+table, th, td {
+    border: 5px solid lightskyblue;
+    width: 80%;
+    border-collapse: collapse;
+    background-color: navy;
+    color: dodgerblue;
+    text-align: center;
+}
+
+.table-class tr:hover {
+    background-color:azure
+}
+
+td {
+    height: 25px;
+    padding: 10px;
+}
+
+th {
+    height:  75px;
+    padding: 10px;
+}
+/* Style the primary button */
+a.primary {
+    display: flex;
+    padding: 25px 25px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: lavenderblush;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+  /* Add hover and active states for the button */
+a.primary:hover {
+    background-color: #07ac75;
+}
+
+a.primary:active {
+    background-color: #003d80;
+}
